@@ -1,4 +1,12 @@
 
+begin()
+function begin(){
+	var elements = document.querySelectorAll( 'body *' );
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].style.fontFamily = "Impact,Charcoal,sans-serif";
+	}
+}
+
 function updateValue(e) {
 	var alphabet = {
 		"0": ["-----"],
@@ -45,7 +53,7 @@ function updateValue(e) {
 	var walrus_message = ""
 
 	for(let i = 0; i < message.length; i++) {
-  		walrus_message += alphabet[message[i]][0].toString()+"/"
+  		walrus_message += alphabet[message[i].toLowerCase()][0].toString()+"/"
 	}
 	document.querySelector(".answer").innerHTML = walrus_message
 
