@@ -1,3 +1,10 @@
+begin()
+function begin(){
+	var elements = document.querySelectorAll( 'body *' );
+	for (var i = 0; i < elements.length; i++) {
+		elements[i].style.fontFamily = "Impact,Charcoal,sans-serif";
+	}
+}
 
 function updateValue(e) {
 	var alphabet = {
