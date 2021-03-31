@@ -1,0 +1,28 @@
+
+.body {
+    margin: 0;
+    padding: 0;
+    background: rgb(173,216,230);
+    font-size: 2.5vh;
+    overflow: hidden;
+}
+
+.mainDiv{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    height: 90vh;
+    width: 450px;
+    transform: translate(-50%, -50%);
+}
+
+.input{
+    font-size: 110%;
+    display: inline-block;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: rgb(150,150,150);
+    padding-left: 5px;
+}
